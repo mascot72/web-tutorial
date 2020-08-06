@@ -1,0 +1,21 @@
+table {
+	border: 4px solid lightseagreen;
+	padding: 4px;
+	font-size: 8rem;
+	margin: 0 auto;
+}
+
+table td {
+	border: 4px solid lightskyblue;
+	width:200px;
+	text-align: center;
+}
+
+.result {	
+	height: 100px;
+	line-height: 100px;
+	padding:30px 60px;
+	text-align: right;
+	color: rgb(251, 255, 0);
+	background-color: #111;
+}

@@ -1,0 +1,178 @@
+<html>
+	<head>
+		<title>Javascript 학습입니다</title>
+		<!-- <link href="./test.css" rel="stylesheet" type="text/css"/> -->
+		<script>
+			// alert('hello world');	//이것은 주석입니다.
+
+			// 변수선언
+			var a1 = true;
+			var bb = true;
+			var cc = a1 % bb;
+			// const cc = [0, 1, 2, 3, 4];
+
+			
+
+			// document.write('a1=' + a1);
+			// document.write(', bb=' + bb);
+			cc = a1 && bb;
+			document.write(', cc=' + cc);
+
+			cc = a1 || bb;
+			document.write(', cc=' + cc);
+
+			cc = !a1;
+			document.write(', cc=' + cc);
+
+/* 
+			var i;
+			for (i=0; i<5; i++) {
+				document.write(' 5번하기:' + i + '<br>');
+				return;
+			}
+
+			var i=0;
+			var result
+			while (i<10) {
+				result = ' 5번하기:' + i + '<br>';
+				document.write(result);
+				i++;
+			}
+
+			do {
+				result = ' 5번하기:' + i + '<br>';
+				document.write(result);
+				i++;
+			} while (i<15) */
+
+			function funcName(startNumber = 0) {
+				var i;
+				for (i = startNumber; i < (5 + startNumber); i++) {
+					console.log('i:' + i);
+					sa
+					console.log('startNumber:' + startNumber);
+					document.write(' 5번하기:' + i + '<br>');
+				}
+			}
+
+			//함수의 중첩
+			document.write('<br>');
+			function first() {
+
+				document.write('exec first!');
+
+				function second() {
+					document.write('exec second!');
+					funcName();
+				}
+
+				second();
+
+			}
+
+
+
+			/* const init = () => {
+				const div = document.querySelector('div');
+				div.append(aa)
+				console.log(div);	//console
+			}
+			window.addEventListener('load', init); */
+
+
+			//반복문의 중첩: 구구단 출력하기
+/* 			for (var i = 1; i <= 9; i++) {
+				for (var j = 1; j <= 9; j++) {
+
+					document.write(i + ' * ' + j + ' = ' + i * j);
+					document.write('<br>');
+				}
+				document.write('-----------------------------<br>');
+			} */
+			// 1 * 1 = 1
+			// 1 * 2 = 2
+			
+			//조건문
+	/* 		if (10 < 10) {
+				alert("1은 10보다 작다.");
+			} else if ( 10 === 10) {
+				alert("1은 10보다 같다.");
+			} else {
+				alert("1은 10보다 크다.");
+			} */
+
+			//Switch case 조건문
+			/* var type = '안녕';
+			switch (type) {
+				case "안녕":
+					document.write('안녕이라고 말하지마!');
+					document.write('안녕이라고 말하지마!');
+					document.write('안녕이라고 말하지마!');
+					document.write('안녕이라고 말하지마!');
+					document.write('안녕이라고 말하지마!');
+					document.write('안녕이라고 말하지마!');
+					break;
+				case "고마워":
+					document.write('Thank you!');
+					break;
+				default:
+					document.write('뭐라고 하는지 모르겠다!');
+					break;
+			} */
+
+
+			 //배열객체
+			 //Object>Array, Date, Object, Math...
+			 var myCalc = (arg) => {
+				 return arg *2;
+			 }
+			 var imsi = [1, "ABC", new Date(), myCalc];
+			 //array javascript: first index 0,1,2,3
+
+			 //  imsi = imsi.concat([4,5,6]);
+			 var abc = '나는 양진영입니다 요';
+			 console.log('before');
+			 var result = abc.split(' ');
+			 //alert(minus);
+			 console.log(result);
+
+			 console.log('before2');
+			 result.forEach(function(val) {
+				document.write('type:' + (typeof val) + ' => ' + val+ '<br/>');
+			 });
+
+			 var obj = {
+				 name: '양진영', job: '학생', age: 37,
+			 	 car: [
+					 {
+						 name: '승용차',
+						 price: 500
+						},
+						{
+							name: "버스"
+						}
+				 ],
+			 };
+			 
+			 console.log(typeof obj);
+			 alert(obj['name']);
+			 obj.job = '프로그래머';
+			 obj.national = 'republic korea';
+			 alert(obj.job);
+			 console.log(obj);
+
+			 for (var key in obj) {
+				 obj[key];
+			 }
+
+
+		</script>
+	</head>
+	<body>
+		<div class="shadowbox">
+			<p>어떤 콘텐츠든 좋습니다.
+			&lt;p&gt;, &lt;table&gt;같이 말이죠. 써보세요!</p>
+	 </div>
+	</body>
+</html>
+
