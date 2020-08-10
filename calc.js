@@ -1,4 +1,4 @@
-let render = () => {
+window.onload = () => {
 	let result = document.querySelector('#result');
 	
 	let btn0 = document.querySelector('#btn0');
@@ -45,5 +45,3 @@ let render = () => {
 	//...
 
 };
-
-document.onload = function(){render();}
