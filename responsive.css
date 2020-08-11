@@ -18,7 +18,7 @@ div {
 	height: 100%;
 	position: relative;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
 	.container {
 		display:block;
 		background-color: rgba(221, 218, 23, 0.452);
@@ -38,10 +38,10 @@ div {
 .a {
 	background-color:blueviolet;
 	position: relative;
-	top: 100px;
+	top: 0;
 	/* left: calc(50% - 50px); */
-	width: 500px;
-	height: 500px;
+	width: 300px;
+	height: 300px;
 	/* z-index:4; */
 }
 .b {
